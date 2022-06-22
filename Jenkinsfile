@@ -62,7 +62,7 @@
 //     }
 // }
 
-nde {
+node {
       stage("last-changes") {
         def publisher = LastChanges.getLastChangesPublisher "LAST_SUCCESSFUL_BUILD", "SIDE", "LINE", true, true, "", "", "", "", ""
               publisher.publishLastChanges()
