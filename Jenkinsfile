@@ -64,7 +64,7 @@
 
 node {
       stage("checkout") {
-        git url: 'https://github.com/jenkinsci/last-changes-plugin.git'
+        git url: 'https://github.com/nikhillala7/OJETauto.git'
       }
 
       stage("last-changes") {
