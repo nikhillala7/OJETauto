@@ -69,7 +69,7 @@ node {
               def changes = publisher.getLastChanges()
               println(changes.getEscapedDiff())
               for (commit in changes.getCommits()) {
-                  println(commit)
+                  echo commit
                   def commitInfo = commit.getCommitInfo()
                   println(commitInfo)
                   println(commitInfo.getCommitMessage())
