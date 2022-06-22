@@ -63,10 +63,6 @@
 // }
 
 node {
-      stage("checkout") {
-        git url: 'https://github.com/jenkinsci/last-changes-plugin.git'
-      }
-
       stage("last-changes") {
         def publisher = LastChanges.getLastChangesPublisher "LAST_SUCCESSFUL_BUILD", "SIDE", "LINE", true, true, "", "", "", "", ""
               publisher.publishLastChanges()
